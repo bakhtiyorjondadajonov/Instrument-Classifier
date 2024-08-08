@@ -4,7 +4,7 @@ import pathlib
 import plotly.express as px
 
 temp = pathlib.PosixPath
-pathlib.PosixPath =  pathlib.WindowsPath if pathlib.WindowsPath else pathlib.PosixPath
+pathlib.PosixPath = temp
 
 st.markdown(
     """
